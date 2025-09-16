@@ -7,7 +7,7 @@ const WhyChooseUs = () => {
       icon: DollarSign,
       title: "Você paga impostos que não deveria",
       description: "Muitas empresas pagam tributos desnecessários por falta de planejamento adequado. Nossa análise identifica onde você está perdendo dinheiro e como otimizar sua carga tributária legalmente.",
-      highlight: "Economia média de R$ 150.000/ano",
+      highlight: "Reduza sua carga tributária legalmente",
       color: "text-red-500",
       bgColor: "bg-red-50"
     },
@@ -15,7 +15,7 @@ const WhyChooseUs = () => {
       icon: TrendingUp,
       title: "Deixa de recuperar créditos que são seus por direito",
       description: "Créditos tributários não aproveitados podem representar milhões em recursos presos. Identificamos e recuperamos valores que pertencem à sua empresa, melhorando seu fluxo de caixa.",
-      highlight: "Até R$ 500.000 em créditos recuperáveis",
+      highlight: "Recupere créditos tributários",
       color: "text-blue-500",
       bgColor: "bg-blue-50"
     },
@@ -23,7 +23,7 @@ const WhyChooseUs = () => {
       icon: Shield,
       title: "Corre risco de multas pesadas por falhas que nem sabia que existiam",
       description: "A legislação tributária muda constantemente. Mantemos sua empresa sempre em conformidade, evitando multas que podem chegar a milhões e protegendo sua reputação no mercado.",
-      highlight: "Proteção contra multas de até R$ 2.000.000",
+      highlight: "Blindagem total contra multas",
       color: "text-orange-500",
       bgColor: "bg-orange-50"
     }
@@ -99,13 +99,9 @@ const WhyChooseUs = () => {
             para maximizar resultados e minimizar riscos.
           </p>
 
-          <div className="grid md:grid-cols-3 gap-6 mb-8">
+          <div className="grid md:grid-cols-2 gap-6 mb-8">
             <div className="text-center">
-              <div className="text-3xl font-bold text-primary mb-2">100%</div>
-              <div className="text-muted-foreground">Conformidade Garantida</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-primary mb-2">30%</div>
+              <div className="text-3xl font-bold text-primary mb-2">70%</div>
               <div className="text-muted-foreground">Redução Média de Impostos</div>
             </div>
             <div className="text-center">

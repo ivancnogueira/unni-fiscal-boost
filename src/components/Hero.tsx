@@ -33,11 +33,21 @@ const Hero = () => {
   };
 
   return (
-    <section id="home" className="hero-bg min-h-screen flex items-center pt-20 pb-16">
+    <section 
+      id="home" 
+      className="min-h-screen flex items-center pt-20 pb-16 relative"
+      style={{
+        backgroundImage: 'url(https://unnicontabilidade.com.br/wp-content/uploads/2025/09/Slider_img-1-1.jpeg)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}
+    >
+      <div className="absolute inset-0 bg-black/60"></div>
       <div className="container mx-auto px-4 relative z-10">
-        <div className="grid lg:grid-cols-5 gap-12 items-center">
-          {/* Content - 60% */}
-          <div className="lg:col-span-3 space-y-8">
+        <div className="max-w-4xl">
+          {/* Content */}
+          <div className="space-y-8">
             {/* Badge */}
             <div className="flex items-center gap-4">
               <Badge className="bg-primary/10 text-primary border-primary/20 px-4 py-2 text-sm font-semibold animate-pulse">
@@ -46,21 +56,19 @@ const Hero = () => {
             </div>
 
             {/* Main Title */}
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-white">
               Sua empresa pode estar pagando{" "}
-              <span className="text-gradient-primary">até 30% a mais</span>{" "}
+              <span className="text-gradient-primary">até 70% a mais</span>{" "}
               de imposto sem perceber.
             </h1>
 
             {/* Subtitle */}
-            <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed max-w-2xl">
-              Nós mostramos onde está o dinheiro escondido e blindamos você contra prejuízos fiscais. 
-              <strong className="text-primary"> Unni Contabilidade</strong> – Especialista em empresas do Lucro Real 
-              e em recuperação de créditos tributários.
+            <p className="text-xl md:text-2xl text-white/90 leading-relaxed max-w-3xl">
+              Nós mostramos onde você está perdendo dinheiro e como otimizar sua carga tributária legalmente. Se você ainda não revisou seus impostos este ano, provavelmente está deixando dinheiro na mesa. E pior: pode estar correndo risco com a Receita sem nem perceber. Nós colocamos seu caixa para respirar e blindamos sua empresa contra prejuízos fiscais.
             </p>
 
             {/* Trust Indicators */}
-            <div className="flex flex-wrap gap-6 text-sm text-muted-foreground">
+            <div className="flex flex-wrap gap-6 text-sm text-white/80">
               <div className="flex items-center gap-2">
                 <CheckCircle className="w-5 h-5 text-primary" />
                 <span>Auditoria Gratuita</span>
@@ -86,50 +94,11 @@ const Hero = () => {
             </div>
 
             {/* Social Proof */}
-            <div className="flex items-center gap-2 text-muted-foreground">
+            <div className="flex items-center gap-2 text-white/80">
               <Users className="w-5 h-5" />
               <span className="text-sm">
                 Usado por 400+ empresas que já recuperaram milhões em créditos
               </span>
-            </div>
-          </div>
-
-          {/* Visual - 40% */}
-          <div className="lg:col-span-2 relative">
-            <div className="relative">
-              {/* Main Image */}
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-                <img 
-                  src="https://unnicontabilidade.com.br/wp-content/uploads/2025/09/Slider_img-1-1.jpeg"
-                  alt="Profissional de contabilidade analisando relatórios fiscais"
-                  className="w-full h-auto object-cover aspect-[4/3]"
-                />
-                
-                {/* Floating Cards */}
-                <div className="absolute -top-4 -left-4 bg-card rounded-lg shadow-lg p-4 animate-fade-in-up">
-                  <div className="flex items-center gap-3">
-                    <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
-                      <TrendingUp className="w-4 h-4 text-primary-foreground" />
-                    </div>
-                    <div>
-                      <div className="text-xs text-muted-foreground">Economia Média</div>
-                      <div className="font-bold text-primary">R$ 150.000</div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="absolute -bottom-4 -right-4 bg-card rounded-lg shadow-lg p-4 animate-slide-in-right">
-                  <div className="flex items-center gap-3">
-                    <div className="w-8 h-8 bg-secondary rounded-full flex items-center justify-center">
-                      <Shield className="w-4 h-4 text-secondary-foreground" />
-                    </div>
-                    <div>
-                      <div className="text-xs text-muted-foreground">Conformidade</div>
-                      <div className="font-bold text-secondary">100%</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>

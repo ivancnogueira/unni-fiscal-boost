@@ -80,8 +80,8 @@ const Biography = () => {
                 <div className="prose prose-lg text-muted-foreground leading-relaxed">
                   <p className="mb-4">
                     <strong className="text-primary">Carlos Murilo</strong> é contador e tributarista 
-                    com sólida formação acadêmica, graduado em Direito pela Universidade Salgado de Oliveira 
-                    e atualmente especializando-se em Controladoria e Finanças.
+                    com sólida formação acadêmica, graduando em Direito pela Universidade Salgado de Oliveira, 
+                    pós-graduado em Direito Tributário e Processo Tributário e atualmente especializando-se em Controladoria e Finanças.
                   </p>
                   
                   <p className="mb-4">
